@@ -10,7 +10,7 @@ import { Profile } from './profile/profile';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
+// export class App {
 //   title = 'angular-tut';
 //   name='Tanya'
 
@@ -27,17 +27,28 @@ export class App {
 
 // define data types
 
-name:string="Tanya Arora"
-data:string|number="tanya"
-other:any=false
-updateName(){
-// this.name="Peter"  
-this.name="20"
-this.data=123
+// name:string="Tanya Arora"
+// data:string|number="tanya"
+// other:any=false
+// updateName(){
+// // this.name="Peter"  
+// this.name="20"
+// this.data=123
+// }
+
+// sum(a:number,b:number){
+//   console.log(a+b);
+  
+// }
+// }
+
+export class App {
+  handleEvent(event:Event){
+    console.log("function called",event.type);
+    // console.log("function called",event.target.class);   
+    // console.log("function called",(event.target as Element).className);
+    console.log("value",(event.target as HTMLInputElement).value);
+    
+  }
 }
 
-sum(a:number,b:number){
-  console.log(a+b);
-  
-}
-}
