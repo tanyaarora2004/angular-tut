@@ -43,12 +43,38 @@ import { Profile } from './profile/profile';
 // }
 
 export class App {
-  handleEvent(event:Event){
-    console.log("function called",event.type);
-    // console.log("function called",event.target.class);   
-    // console.log("function called",(event.target as Element).className);
-    console.log("value",(event.target as HTMLInputElement).value);
+
+  // events in angular
+  // handleEvent(event:Event){
+  //   console.log("function called",event.type);
+  //   // console.log("function called",event.target.class);   
+  //   // console.log("function called",(event.target as Element).className);
+  //   console.log("value",(event.target as HTMLInputElement).value);
+  // }
+
+  // get and set input field value
+  name=""
+  displayName="";
+  getName(event:Event){
     
+    const name=(event.target as HTMLInputElement).value;
+    // console.log(name);
+    this.name=name;
+  }
+  showName(){
+    this.displayName=this.name;
+  }
+  setName(){
+    this.name="Tanya"
+  }
+
+  email=""
+  getEmail(val:string){
+    this.email=val;
+    
+  }
+  setEmail(){
+    this.email="tanya@gmail.com"
   }
 }
 

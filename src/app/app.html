@@ -5,13 +5,19 @@
 <app-signup></app-signup>
 <h1>Hello Component</h1>
 <app-profile></app-profile> -->
+
+<!-- Function Call Ob button click  -->
+
 <!-- <h1>Function Call on Button Click</h1>
 <button (click)="handleClickEvent()">Click Me</button> -->
+
+<!-- DEfine data types  -->
 
 <!-- <h1>Define Data Type</h1>
 <button (click)="sum(10,20)">Sum</button> -->
 
-<h2>Events in Angular</h2>
+<!-- Events in Angular -->
+<!-- <h2>Events in Angular</h2>
 <button class="btn" name="login" (click)="handleEvent($event)">Click Event</button>
 
 <br><br>
@@ -26,4 +32,21 @@
 
 <input type="text" name="user" (input)="handleEvent($event)">
 <input type="text" name="user" (focus)="handleEvent($event)">
-<input type="text" name="user" (blur)="handleEvent($event)">
+<input type="text" name="user" (blur)="handleEvent($event)"> -->
+
+<!-- Get and Set Input field value  -->
+
+<h2>Get and Set Input field value </h2>
+<h1>User name is :{{displayName}}</h1>
+<input type="text" value="{{name}}" (input)="getName($event)" placeholder="Enter username">
+<br><br>
+<button (click)="showName()">Get Name</button>
+
+<button (click)="setName()">Set Name</button>
+<hr> 
+<h2>Template Reference</h2>
+<input type="text" value="{{email}}" placeholder="enter email" #emailField >
+<br>
+<h2>Email is {{email}}</h2>
+<button (click)="getEmail(emailField.value)">Get Email</button>
+<button (click)="setEmail()">Set Email</button>
