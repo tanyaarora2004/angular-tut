@@ -4,10 +4,11 @@ import { Login } from './login/login';
 import { Signup } from './signup/signup';
 import { Profile } from './profile/profile';
 import { Style } from './style/style';
+import { Ifelse } from './ifelse/ifelse';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Login,Signup,Profile,Style],
+  imports: [RouterOutlet,Login,Signup,Profile,Style,Ifelse],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
