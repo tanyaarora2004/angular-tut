@@ -5,10 +5,12 @@ import { Signup } from './signup/signup';
 import { Profile } from './profile/profile';
 import { Style } from './style/style';
 import { Ifelse } from './ifelse/ifelse';
+import { Loops } from './loops/loops';
+import { Signals } from './signals/signals';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Login,Signup,Profile,Style,Ifelse],
+  imports: [RouterOutlet,Login,Signup,Profile,Style,Ifelse,Loops,Signals],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
