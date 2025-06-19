@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 })
 export class Ifelse {
   display=true
-  x=10
   toggleDiv=true
+
   hide(){
     this.display=false;
   }
@@ -22,4 +22,21 @@ export class Ifelse {
   toggleTwo(){
     this.toggleDiv=!this.toggleDiv
   }
-}
+
+   x=1
+   color(x:number){
+    this.x=x;
+   }
+   handleInput(event:Event){
+     this.x=parseInt((event.target as HTMLInputElement).value);
+   }
+
+   colour='red'
+   color1(colour:string){
+    this.colour=colour;
+   }
+
+   change(event:Event){
+     this.colour=((event.target as HTMLInputElement).value);
+   }
+  }

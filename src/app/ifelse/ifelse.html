@@ -21,6 +21,53 @@
 
     </div>
 } -->
-
+<!-- 
 <h1> Else If | Control flow</h1>
 
+<button (click)="color(1)">Red</button>
+<button (click)="color(2)">Green</button>
+<button (click)="color(3)">Yellow</button>
+<button (click)="color(4)">Other</button>
+<input type="number" placeholder="Enter number" (input)="handleInput($event)">
+@if(x==1){
+    <div style="width: 300px; height: 300px ; background-color: red;">
+
+    </div>
+}@else if(x==2){
+    <div style="width: 300px; height: 300px ; background-color: green;">
+
+    </div>
+}@else if(x==3){
+    <div style="width: 300px; height: 300px ; background-color: yellow;">
+
+    </div>
+}@else{
+    <div style="width: 300px; height: 300px ; background-color: black;">
+
+    </div>
+} -->
+
+<h1>Switch Statements</h1>
+<button (click)="color1('red')">Red</button>
+<button (click)="color1('green')">Green</button>
+<button (click)="color1('pink')">Pink</button>
+<button (click)="color1('aqua')">Aqua</button>
+<button (click)="color1('gold')">Gold</button>
+<input type="text" placeholder="Enter color" (input)="change($event)">
+@switch(colour){
+    @case ('red'){
+    <h1 style="background-color: red;">Red Colour</h1>
+    }
+     @case ('green'){
+    <h1 style="background-color: green;">Green Colour</h1>
+    }
+    @case ('pink'){
+    <h1 style="background-color: pink;">Pink Colour</h1>
+    }
+    @case ('aqua'){
+    <h1 style="background-color: aqua;">Aqua Colour</h1>
+    }
+    @default{
+        <h1 style="background-color: rgb(2, 2, 0); color: aliceblue;">No Colour</h1>
+    }
+}
