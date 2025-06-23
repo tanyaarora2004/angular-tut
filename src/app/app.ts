@@ -7,10 +7,11 @@ import { Style } from './style/style';
 import { Ifelse } from './ifelse/ifelse';
 import { Loops } from './loops/loops';
 import { Signals } from './signals/signals';
+import { Directives } from './directives/directives';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Login,Signup,Profile,Style,Ifelse,Loops,Signals],
+  imports: [RouterOutlet,Login,Signup,Profile,Style,Ifelse,Loops,Signals,Directives],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

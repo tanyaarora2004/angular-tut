@@ -1,7 +1,7 @@
-<h1>Loops in template file</h1>
+<!-- <h1>Loops in template file</h1>
 <h2>For Loop</h2>
 
-<!-- using index -->
+using index
 <h3>{{users[0]}}</h3>
 
 @for(user of users; track user){
@@ -19,4 +19,21 @@
    
 }
 <br><br>
- {{n}}
+ {{n}} -->
+
+
+ <h2>For Loop Contextual Variable</h2>
+
+ @for(user of users; track user; let i=$index){
+
+    @if($first){
+        <h2 style="color: aquamarine; background-color: palevioletred;">{{i+1}}  {{user}}</h2>
+    }@else if($last){
+        <h2 style="color: palevioletred; background-color: aquamarine;">{{i+1}}  {{user}}</h2>
+    }@else{
+        <h2>{{i+1}}  {{user}}</h2>
+    }
+    <!-- <h1>{{$count}}</h1> -->
+}@empty{
+    <h1>No data</h1>
+}
