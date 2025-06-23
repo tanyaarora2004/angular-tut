@@ -17,8 +17,22 @@
 <h2>{{count()}}</h2>
 <button (click)="count.set(count()+1)">Increment</button> -->
 
-<h2>Data Types with Signals</h2>
+<!-- <h2>Data Types with Signals</h2>
 
 <h2>{{data()}}</h2>
-<!-- <h2>{{count()}}</h2> -->
-<button (click)="update()">Update</button>
+<h2>{{count()}}</h2>
+<button (click)="update()">Update</button> -->
+
+<!-- <h2>Computed Signals</h2>
+<h2>{{c()}}</h2>
+<button (click)="showValue()">Show value</button>
+<button (click)="updateX()">Update X</button> -->
+
+<h2>Effects</h2>
+<!-- <h2>{{userName()}}</h2> -->
+ <h2>{{count()}}</h2>
+<button (click)="userName.set('Vanya')">Effect</button>
+<button (click)="toggle()">Show Page</button>
+@if(displayHeading){
+    <h1 style="background-color: aqua;">Page Heading</h1>
+}
