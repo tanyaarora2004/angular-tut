@@ -1,6 +1,6 @@
 <!-- <h1 *ngIf="show">Directives</h1> -->
 
-<h1>*ngFor Directives</h1>
+<!-- <h1>*ngFor Directives</h1>
 <ul>
     <li *ngFor="let x of students">
         {{x}}
@@ -11,4 +11,44 @@
     <li *ngFor="let student of studentsData">
         {{student.name}}, {{student.age}}, {{student.email}}
     </li>
-</ul>
+</ul> -->
+
+<!-- <h1>*ngIf Directives</h1> -->
+<!-- <h1 *ngIf="show">Heading</h1> -->
+
+<!-- <div *ngIf="login; else elseBlock">
+    <a href="">Logout</a>
+</div>
+
+<ng-template #elseBlock>
+    <a href="/">Login</a>
+</ng-template> -->
+
+<!-- multiple conditions -->
+
+<!-- <div *ngIf="block==0">
+    <h1>Heading 0</h1>
+</div>
+<div *ngIf="block==1">
+    <h1>Heading 1</h1>
+</div>
+<div *ngIf="block==2">
+    <h1>Heading 2</h1>
+</div>
+<button (click)="updateBlock()">Update Block</button> -->
+
+<h1>*ngSwitch Directives</h1>
+<button (click)="changeColor('red')">Red</button>
+<button (click)="changeColor('green')">Green</button>
+<button (click)="changeColor('blue')">Blue</button>
+<button (click)="changeColor('pink')">Pink</button>
+<button (click)="changeColor('plum')">Plum</button>
+<div [ngSwitch] ="color">
+    <h2 *ngSwitchCase="'red'" style="background-color: red;">Red Color</h2>
+    <h2 *ngSwitchCase="'green'" style="background-color: green;">Green Color</h2>
+    <h2 *ngSwitchCase="'blue'" style="background-color: blue;">Blue Color</h2>
+    <h2 *ngSwitchCase="'pink'" style="background-color: pink;">Pink Color</h2>
+    <h2 *ngSwitchCase="'plum'" style="background-color: plum;">Plum Color</h2>
+    <!-- if color doesn't exist -->
+     <h2 *ngSwitchDefault>Default case</h2>
+</div>
