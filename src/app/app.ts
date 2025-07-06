@@ -1,17 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Login } from './login/login';
-import { Signup } from './signup/signup';
-import { Profile } from './profile/profile';
-import { Style } from './style/style';
-import { Ifelse } from './ifelse/ifelse';
-import { Loops } from './loops/loops';
-import { Signals } from './signals/signals';
-import { Directives } from './directives/directives';
+import { RouterLink, RouterOutlet } from '@angular/router';
+// import { Login } from './login/login';
+// import { Signup } from './signup/signup';
+// import { Profile } from './profile/profile';
+// import { Style } from './style/style';
+// import { Ifelse } from './ifelse/ifelse';
+// import { Loops } from './loops/loops';
+// import { Signals } from './signals/signals';
+// import { Directives } from './directives/directives';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Login,Signup,Profile,Style,Ifelse,Loops,Signals,Directives],
+  // imports: [RouterOutlet,Login,Signup,Profile,Style,Ifelse,Loops,Signals,Directives],
+  imports:[RouterOutlet,RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -58,28 +59,28 @@ export class App {
   // }
 
   // get and set input field value
-  name=""
-  displayName="";
-  getName(event:Event){
+  // name=""
+  // displayName="";
+  // getName(event:Event){
     
-    const name=(event.target as HTMLInputElement).value;
-    // console.log(name);
-    this.name=name;
-  }
-  showName(){
-    this.displayName=this.name;
-  }
-  setName(){
-    this.name="Tanya"
-  }
+  //   const name=(event.target as HTMLInputElement).value;
+  //   // console.log(name);
+  //   this.name=name;
+  // }
+  // showName(){
+  //   this.displayName=this.name;
+  // }
+  // setName(){
+  //   this.name="Tanya"
+  // }
 
-  email=""
-  getEmail(val:string){
-    this.email=val;
+  // email=""
+  // getEmail(val:string){
+  //   this.email=val;
     
-  }
-  setEmail(){
-    this.email="tanya@gmail.com"
-  }
+  // }
+  // setEmail(){
+  //   this.email="tanya@gmail.com"
+  // }
 }
 
