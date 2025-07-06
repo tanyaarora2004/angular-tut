@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { Header } from './header/header';
 // import { Login } from './login/login';
 // import { Signup } from './signup/signup';
 // import { Profile } from './profile/profile';
@@ -12,7 +13,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet,Login,Signup,Profile,Style,Ifelse,Loops,Signals,Directives],
-  imports:[RouterOutlet,RouterLink],
+  imports:[RouterOutlet,Header],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
